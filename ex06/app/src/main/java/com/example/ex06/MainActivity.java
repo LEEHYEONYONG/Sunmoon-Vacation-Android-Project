@@ -11,6 +11,8 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     ImageView image;
 
+    int result=0;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +24,9 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btn3).setOnLongClickListener(mLong);
         findViewById(R.id.btn4).setOnLongClickListener(mLong);
         findViewById(R.id.btn5).setOnLongClickListener(mLong);
+
+
+
     }
 
 
@@ -59,6 +64,12 @@ public class MainActivity extends AppCompatActivity {
         switch (v.getId()){
             case R.id.btn1:
                 image.setImageResource(R.drawable.car1);
+                //1~100까지 합을 토스트로 출력
+                result=0;
+                for(int i=0;i<100;i++){
+                    result = result +i;
+                }
+                Toast.makeText(MainActivity.this,result+"",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btn2:
                 image.setImageResource(R.drawable.car2);
