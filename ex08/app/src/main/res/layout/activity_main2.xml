@@ -4,13 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2">
+    tools:context=".MainActivity2"
+    android:orientation="vertical">
 
     <Button
         android:id="@+id/btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="서브메뉴"
-        android:textColor="#F44336"/>
+        android:textColor="#F44336"
+        android:textSize="200px"/>
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="서바이벌메뉴"
+        android:textColor="#F44336"
+        android:textSize="200px"/>
 
 </LinearLayout>
