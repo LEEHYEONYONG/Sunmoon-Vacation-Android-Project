@@ -7,12 +7,14 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity2 extends AppCompatActivity {
     LinearLayout page1,page2,page3;
     EditText text1;
     ImageView image;
+    //TextView sum;
     String str="";
 
     @Override
@@ -24,6 +26,7 @@ public class MainActivity2 extends AppCompatActivity {
         page3=findViewById(R.id.page3);
         text1=findViewById(R.id.text1);
         image=findViewById(R.id.image);
+
     }
 
     //버튼클릭 메서드
@@ -57,6 +60,16 @@ public class MainActivity2 extends AppCompatActivity {
             case R.id.imagebtn3:
                 page2.setVisibility(View.VISIBLE);
                 image.setImageResource(R.drawable.car3);
+                break;
+            case R.id.btnSum:
+                page3.setVisibility(View.VISIBLE);
+                int sum=0;
+                for(int i=0;i<=100;i++){
+                    sum=sum+i;
+                }
+                Toast.makeText(MainActivity2.this,sum+"",Toast.LENGTH_SHORT).show();
+                TextView txtsum=findViewById(R.id.sum);
+                txtsum.setText("합계="+sum);
                 break;
         }
     }
