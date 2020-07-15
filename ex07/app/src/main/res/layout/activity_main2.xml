@@ -52,12 +52,24 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="20sp"
-            android:background="#F44336">
+            android:background="#F44336"
+            android:orientation="vertical">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="1페이지 입니다."
                 android:textSize="20sp"/>
+            <EditText
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="이름을 입력하세요."/>
+            <Button
+                android:id="@+id/btn4"
+                android:onClick="mClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="출력"/>
         </LinearLayout>
         <LinearLayout
             android:id="@+id/page2"
@@ -65,12 +77,31 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="20sp"
-            android:background="#3F51B5">
-            <TextView
-                android:layout_width="wrap_content"
+            android:background="#3F51B5"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="200sp"
+                android:layout_height="180sp"
+                android:src="@drawable/car1"/>
+            <Button
+                android:id="@+id/imagebtn1"
+                android:onClick="mClick"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="2페이지 입니다."
-                android:textSize="20sp"/>
+                android:text="첫번쨰그림"/>
+            <Button
+                android:id="@+id/imagebtn2"
+                android:onClick="mClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="두번쨰그림"/>
+            <Button
+                android:id="@+id/imagebtn3"
+                android:onClick="mClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="세번쨰그림"/>
         </LinearLayout>
         <LinearLayout
             android:id="@+id/page3"
