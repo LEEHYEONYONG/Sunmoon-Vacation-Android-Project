@@ -33,11 +33,11 @@ public class MainActivity extends AppCompatActivity {
             case R.id.item2:
                 image.setImageResource(R.drawable.item2);
                 break;
-            case R.id.item3:
-                image.setImageResource(R.drawable.item4);
-                break;
             case R.id.item4:
                 image.setImageResource(R.drawable.item3);
+                break;
+            case R.id.item5:
+                image.setImageResource(R.drawable.item4);
                 break;
         }
         return super.onOptionsItemSelected(item);
