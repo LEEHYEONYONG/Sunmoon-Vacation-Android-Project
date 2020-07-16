@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="fruits">
+        <item>사과</item>
+        <item>딸기</item>
+        <item>바나나</item>
+        <item>복숭아</item>
+    </string-array>
+    <string-array name="chinese">
+        <item>짜장면</item>
+        <item>짬뽕</item>
+        <item>탕수육</item>
+        <item>군만두</item>
+        <item>유산슬</item>
+        <item>양장피</item>
+        <item>팔보채</item>
+    </string-array>
+</resources>
