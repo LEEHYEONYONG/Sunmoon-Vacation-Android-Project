@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -37,9 +38,18 @@ public class MainActivity3 extends AppCompatActivity {
         //어댑터생성
         ad = new ArrayAdapter(this,  android.R.layout.simple_list_item_single_choice, data);
 
+
+
         //listview adapter set
         list.setAdapter(ad);
         list.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                String str=data.get(i);
+                Toast.makeText(MainActivity3.this,str,Toast.LENGTH_SHORT).show();
+            }
+        });
 
         //btn1 클릭했을때
         btn1.setOnClickListener(new Button.OnClickListener() {
