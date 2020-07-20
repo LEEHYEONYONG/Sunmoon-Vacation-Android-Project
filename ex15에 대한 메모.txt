@@ -1,0 +1,5 @@
+수정버튼(mainActivity)
+MainActivity -> maiinactivity / oncreate
+
+저장및 취소버튼(mainActivity2)
+MainActivity2 -> mainActivity / onActivityResult
